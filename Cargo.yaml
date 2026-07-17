@@ -1,6 +1,6 @@
-
 services:
   - type: web
     name: config-centre
     runtime: image
+    buildCommand: echo "No build needed"
     startCommand: php -S 0.0.0.0:$PORT index.php
